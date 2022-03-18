@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <link rel="stylesheet" href="styl.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Majkelus Jemiołkus survey form<h1>
+    <p id="description">Thank you for being cool guy that visits this website</p>
+  </header>  
+      <form id="survey-form">
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age (optional)
+            </label>
+ 
+            <input type="number" min="1" max="110"
+                   id="number"
+                   placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="tank" id="label-tankclass">
+                Choose your favourite tank class
+            </label>
+ 
+            <select name="tank" id=tank>
+              <option value="mbt">Main Battle Tank</option>
+              <option value="light">Light Tank</option>
+              <option value="medium">Medium Tank</option>
+              <option value="heavy">Heavy Tank</option>
+              <option value="artillery">Artillery</option>
+              <option value="destroyer">Tank destroyer</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="cheeseq&a" id="label-cheeseq&a">
+                Do you like cheese?
+            </label>
+            <label for="response-1">
+                <input type="radio"
+                       id="response-1"
+                       name="response">Yes</input>
+            </label>
+        <label for="response-2">
+                <input type="radio"
+                       id="response-2"
+                       name="response">Yes</input>
+            </label>
+      <label for="response-3">
+                <input type="radio"
+                       id="response-3"
+                       name="response">Yes</input>
+            </label>
+        </div>
+   <div class="form-control">
+            <label for="cheese" id="label-cheese">
+                What is your favorite cheese?
+            </label>
+            <select name="cheese" id=cheese>
+              <option value="gouda">Gouda</option>
+              <option value="mazdamer">Mazdamer</option>
+              <option value="feta">Feta</option>
+              <option value="parmezan">Parmezan</option>
+              <option value="mozarella">Mozarella</option>
+            </select>
+        </div>
+        <div class="form-control">
+          <label for="cheeseUsage" id="label-cheeseUsage">
+            Where do you like your cheese?
+          </label>
+          <label for="inp-1">
+            <input type="checkbox" name="inp">On pizza</input>
+          </label>
+  <label for="inp-2">
+            <input type="checkbox" name="inp">Under pizza</input>
+          </label>
+<label for="inp-3">
+            <input type="checkbox" name="inp">On bread</input>
+          </label>
+<label for="inp-4">
+            <input type="checkbox" name="inp">In bread</input>
+          </label>
+<label for="inp-5">
+            <input type="checkbox" name="inp">In pocket</input>
+          </label>
+<label for="inp-6">
+            <input type="checkbox" name="inp">In refrigerator</input>
+          </label>
+<label for="inp-7">
+            <input type="checkbox" name="inp">In mouth</input>
+          </label>
+<label for="inp-8">
+            <input type="checkbox" name="inp">At the wall in picture frame</input>
+          </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                Write something about cheese.
+            </label>
+           <textarea name="comment" id="comment"
+                placeholder="Enter your poem here">
+            </textarea>
+        </div>
+      </form>
+</body>
