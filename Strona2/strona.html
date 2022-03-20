@@ -4,7 +4,6 @@
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="John Doe">
-  <link rel="stylesheet" href="styl.css">
   <title>Survey Form</title>
 </head>
 <body>
@@ -14,27 +13,27 @@
   </header>  
       <form id="survey-form">
         <div class="form-control">
-            <label for="name" id="label-name">
+            <label for="name" id="name-label">
                 Name
             </label>
  
             <!-- Input Type Text -->
             <input type="text"
-                   id="name"
+                   id="name" required
                    placeholder="Enter your name" />
         </div>
         <div class="form-control">
-            <label for="email" id="label-email">
+            <label for="email" id="email-label">
                 Email
             </label>
  
             <!-- Input Type Text -->
-            <input type="text"
-                   id="email"
+            <input type="email"
+                   id="email" required
                    placeholder="Enter your email" />
         </div>
         <div class="form-control">
-            <label for="age" id="label-age">
+            <label for="age" id="number-label">
                 Age (optional)
             </label>
  
@@ -47,7 +46,7 @@
                 Choose your favourite tank class
             </label>
  
-            <select name="tank" id=tank>
+            <select name="tank" id="dropdown">
               <option value="mbt">Main Battle Tank</option>
               <option value="light">Light Tank</option>
               <option value="medium">Medium Tank</option>
@@ -62,17 +61,17 @@
             </label>
             <label for="response-1">
                 <input type="radio"
-                       id="response-1"
+                       id="response-1" value="one"
                        name="response">Yes</input>
             </label>
         <label for="response-2">
                 <input type="radio"
-                       id="response-2"
+                       id="response-2" value="two"
                        name="response">Yes</input>
             </label>
       <label for="response-3">
                 <input type="radio"
-                       id="response-3"
+                       id="response-3" value="three"
                        name="response">Yes</input>
             </label>
         </div>
@@ -93,28 +92,28 @@
             Where do you like your cheese?
           </label>
           <label for="inp-1">
-            <input type="checkbox" name="inp">On pizza</input>
+            <input type="checkbox" name="inp" value="1">On pizza</input>
           </label>
   <label for="inp-2">
-            <input type="checkbox" name="inp">Under pizza</input>
+            <input type="checkbox" name="inp" value="2">Under pizza</input>
           </label>
 <label for="inp-3">
-            <input type="checkbox" name="inp">On bread</input>
+            <input type="checkbox" name="inp" value="3">On bread</input>
           </label>
 <label for="inp-4">
-            <input type="checkbox" name="inp">In bread</input>
+            <input type="checkbox" name="inp" value="4">In bread</input>
           </label>
 <label for="inp-5">
-            <input type="checkbox" name="inp">In pocket</input>
+            <input type="checkbox" name="inp" value="5">In pocket</input>
           </label>
 <label for="inp-6">
-            <input type="checkbox" name="inp">In refrigerator</input>
+            <input type="checkbox" name="inp" value="6">In refrigerator</input>
           </label>
 <label for="inp-7">
-            <input type="checkbox" name="inp">In mouth</input>
+            <input type="checkbox" name="inp" value="7">In mouth</input>
           </label>
 <label for="inp-8">
-            <input type="checkbox" name="inp">At the wall in picture frame</input>
+            <input type="checkbox" name="inp" value="8">At the wall in picture frame</input>
           </label>
         </div>
         <div class="form-control">
@@ -124,6 +123,9 @@
            <textarea name="comment" id="comment"
                 placeholder="Enter your poem here">
             </textarea>
+        </div>
+        <div class="butt">
+          <button class="Submit-button" role="button" id="submit">Submit</button>
         </div>
       </form>
 </body>
