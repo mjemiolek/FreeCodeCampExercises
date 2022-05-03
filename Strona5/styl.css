@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'cyberpunkregular';
+    src: url('cyberpunk-webfont.woff2') format('woff2'),
+         url('cyberpunk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
  margin: 0px;
  font-family: 'Rajdhani', sans-serif;
@@ -21,6 +31,10 @@ h1 {
   font-size: 68px;
   margin: 0;
   color: #fff;
+}
+
+span {
+	font-family: 'cyberpunkregular', Arial, sans-serif;
 }
 
 p {
